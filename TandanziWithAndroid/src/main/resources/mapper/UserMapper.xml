@@ -6,11 +6,17 @@
 <mapper namespace="com.scit.tandanzi.dao.UserMapper">
 	<!--회원가입 -->
 	<insert id="UserInsert" parameterType="User">
-		insert into Users
+		insert into User
 		values(
-		#{num}
-		,#{name}
-		,#{phone}
+		#{id}
+		,#{pw}
+		,#{height}
+		,#{weight}
+		,#{gender}
+		,#{age}
+		,#{carbohy}
+		,#{protein}
+		,#{fat}
 		)
 	</insert>
 		
