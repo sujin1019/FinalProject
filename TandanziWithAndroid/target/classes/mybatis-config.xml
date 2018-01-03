@@ -4,7 +4,7 @@
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<typeAliases>
-		<typeAlias type="com.scit.tandanzi.vo.User" alias="User" />
+		<typeAlias type="com.scit.tandanzi.vo.UserVO" alias="User" />
 	</typeAliases>
 	<mappers>
 		<mapper resource="mapper/UserMapper.xml" />

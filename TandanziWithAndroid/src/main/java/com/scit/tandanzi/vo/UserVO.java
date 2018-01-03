@@ -1,6 +1,6 @@
 package com.scit.tandanzi.vo;
 
-public class User {
+public class UserVO {
 
 	private String id;
 	private String pw;
@@ -11,9 +11,9 @@ public class User {
 	private double protein;
 	private double fat;
 	
-	public User(){}
+	public UserVO(){}
 
-	public User(String id, String pw, double height, double weight, int age, double carbohy, double protein,
+	public UserVO(String id, String pw, double height, double weight, int age, double carbohy, double protein,
 			double fat) {
 		super();
 		this.id = id;
