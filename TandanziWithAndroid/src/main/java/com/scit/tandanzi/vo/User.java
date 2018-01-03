@@ -2,62 +2,117 @@ package com.scit.tandanzi.vo;
 
 public class User {
 
-	private int num;
-	private String name;
-	private String phone;
+	private String id;
+	private String pw;
+	private double height;
+	private double weight;
+	private int age;
+	private double carbohy;
+	private double protein;
+	private double fat;
 	
-	
-	//constructor
-	public User() {
+	public User(){}
+
+	public User(String id, String pw, double height, double weight, int age, double carbohy, double protein,
+			double fat) {
 		super();
+		this.id = id;
+		this.pw = pw;
+		this.height = height;
+		this.weight = weight;
+		this.age = age;
+		this.carbohy = carbohy;
+		this.protein = protein;
+		this.fat = fat;
 	}
 
 
-	public User(int num, String name, String phone) {
-		super();
-		this.num = num;
-		this.name = name;
-		this.phone = phone;
+	public String getId() {
+		return id;
 	}
 
 
-	//getter & setter
-	public int getNum() {
-		return num;
+	public void setId(String id) {
+		this.id = id;
 	}
 
 
-	public void setNum(int num) {
-		this.num = num;
+	public String getPw() {
+		return pw;
 	}
 
 
-	public String getName() {
-		return name;
+	public void setPw(String pw) {
+		this.pw = pw;
 	}
 
 
-	public void setName(String name) {
-		this.name = name;
+	public double getHeight() {
+		return height;
 	}
 
 
-	public String getPhone() {
-		return phone;
+	public void setHeight(double height) {
+		this.height = height;
 	}
 
 
-	public void setPhone(String phone) {
-		this.phone = phone;
+	public double getWeight() {
+		return weight;
+	}
+
+
+	public void setWeight(double weight) {
+		this.weight = weight;
+	}
+
+
+	public int getAge() {
+		return age;
+	}
+
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+
+	public double getCarbohy() {
+		return carbohy;
+	}
+
+
+	public void setCarbohy(double carbohy) {
+		this.carbohy = carbohy;
+	}
+
+
+	public double getProtein() {
+		return protein;
+	}
+
+
+	public void setProtein(double protein) {
+		this.protein = protein;
+	}
+
+
+	public double getFat() {
+		return fat;
+	}
+
+
+	public void setFat(double fat) {
+		this.fat = fat;
 	}
 
 
 	@Override
 	public String toString() {
-		return "User [num=" + num + ", name=" + name + ", phone=" + phone + "]";
+		return "User [id=" + id + ", pw=" + pw + ", height=" + height + ", weight=" + weight + ", age=" + age
+				+ ", carbohy=" + carbohy + ", protein=" + protein + ", fat=" + fat + "]";
 	}
 	
 	
-
 	
 }
