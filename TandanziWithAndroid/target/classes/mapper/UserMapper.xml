@@ -10,10 +10,7 @@
 		values(
 		#{id}
 		,#{pw}
-		,#{height}
 		,#{weight}
-		,#{gender}
-		,#{age}
 		,#{carbohy}
 		,#{protein}
 		,#{fat}
