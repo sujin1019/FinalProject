@@ -8,9 +8,12 @@
 	<insert id="UserInsert" parameterType="User">
 		insert into Users
 		values(
-		#{num}
-		,#{name}
-		,#{phone}
+		#{id}
+		,#{pw}
+		,#{weight}
+		,#{carbohy}
+		,#{protein}
+		,#{fat}
 		)
 	</insert>
 		
