@@ -5,7 +5,7 @@
 
 <mapper namespace="com.scit.tandanzi.dao.UserMapper">
 	<!--회원가입 -->
-	<insert id="UserInsert" parameterType="User">
+	<insert id="UserInsert" parameterType="User"> 
 		insert into Users
 		values(
 		#{id}
