@@ -13,21 +13,20 @@ public class UserDAO implements UserMapper {
 	
 	@Autowired
 	SqlSession sqlSession;
-	public void UserInsert(UserVO user) {
+	public int UserInsert(UserVO user) {
 		UserMapper mapper = sqlSession.getMapper(UserMapper.class);
 		
 		double calories = ((user.getWeight()*1000)/454)*18;
 		
-		double carbohy = calories*0.55;
-		double protein = calories*0.25;
-		double fat = calories*0.20;
+		double carbohy = Math.round(calories*0.55*100)/100.0;
+		double protein = Math.round(calories*0.25*100)/100.0;
+		double fat = Math.round(calories*0.20*100)/100.0;
 
 		user.setCarbohy(carbohy);
 		user.setProtein(protein);
 		user.setFat(fat);
 		
-		System.out.println("Dao : "+user);
-		mapper.UserInsert(user);
+		return mapper.UserInsert(user);
 		
 	}
 	
