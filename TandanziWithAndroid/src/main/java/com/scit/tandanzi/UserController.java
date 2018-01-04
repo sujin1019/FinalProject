@@ -13,9 +13,12 @@ public class UserController {
 	
 	@Autowired UserDAO userDao;
 	
-	@RequestMapping(value="join", method=RequestMethod.POST)
+	@RequestMapping(value="join", method=RequestMethod.GET)
 	public String join(UserVO user){
+		System.out.println("확인");
 		userDao.UserInsert(user);
+		
+		
 		return "";
 	}
 }
