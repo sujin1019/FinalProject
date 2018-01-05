@@ -25,8 +25,8 @@ public class UserController {
 		return "success";
 	}
 	
-	@RequestMapping(value="login",method=RequestMethod.GET)
+/*	@RequestMapping(value="login",method=RequestMethod.GET)
 	public String login(UserVO user) {
 		userDao.UserFind(user);
-	}
+	}*/
 }
