@@ -9,5 +9,5 @@ import com.scit.tandanzi.vo.UserVO;
 public interface UserMapper {
 
 	public int UserInsert(UserVO user);
-
+	public UserVO UserFind(UserVO user);
 }

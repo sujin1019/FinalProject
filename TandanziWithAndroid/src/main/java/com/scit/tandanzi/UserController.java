@@ -17,6 +17,7 @@ public class UserController {
 
 	@RequestMapping(value = "join", method = RequestMethod.GET)
 	public @ResponseBody String join(UserVO user) {
+		System.out.println(user);
 		try {
 			userDao.UserInsert(user);
 		} catch (Exception e) {
@@ -25,8 +26,15 @@ public class UserController {
 		return "success";
 	}
 	
-/*	@RequestMapping(value="login",method=RequestMethod.GET)
-	public String login(UserVO user) {
-		userDao.UserFind(user);
-	}*/
+	@RequestMapping(value="login",method=RequestMethod.GET)
+	   public @ResponseBody String login(UserVO user) {
+	      try {
+	         System.out.println(user);
+	         userDao.UserFind(user);
+	      }catch(Exception e) {
+	         return "failed";
+	      }
+	      
+	      return "success";
+	   }
 }

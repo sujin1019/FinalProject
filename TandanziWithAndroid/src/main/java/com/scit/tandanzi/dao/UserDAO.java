@@ -30,13 +30,12 @@ public class UserDAO implements UserMapper {
 		
 	}
 	
-	public void UserFind(String id,String pw,UserVO user) {
-		UserMapper mapper = sqlSession.getMapper(UserMapper.class);
-		if(id==user.getId()||pw==user.getPw()) {
-			System.out.println("로그인되었습니다.");
-		}
-		
-	}
+	public UserVO UserFind(UserVO user) {
+	      UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+	      user = mapper.UserFind(user);
+	      return user;
+	         
+	   }
 
 	
 }

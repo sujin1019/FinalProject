@@ -6,5 +6,8 @@
 <mapper namespace="com.scit.tandanzi.dao.SearchMapper">
 
 <!-- 검색 -->
-		
+		<select id="searchFood" resultType="Search">
+			select * from eachfood
+			where name like '%' || #{foodname} || '%'
+		</select>
 </mapper>

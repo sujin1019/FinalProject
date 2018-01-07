@@ -16,5 +16,9 @@
 		,#{fat}
 		)
 	</insert>
-		
+	
+	<!-- 로그인-->
+	<select id="UserFind" parameterType="User" resultType="User">
+      select id, pw from Users where id=#{id} and pw=#{pw} 
+   </select>	
 </mapper>
