@@ -3,16 +3,18 @@ package com.scit.tandanzi.vo;
 public class SearchVO {
 	private int foodNum;
 	private String name;
+	private double eachkcal;
 	private double eachCarbohy;
 	private double eachProtein;
 	private double eachFat;
 	
 	public SearchVO(){}
 
-	public SearchVO(int foodNum, String name, double eachCarbohy, double eachProtein, double eachFat) {
+	public SearchVO(int foodNum, String name, double eachkcal, double eachCarbohy, double eachProtein, double eachFat) {
 		super();
 		this.foodNum = foodNum;
 		this.name = name;
+		this.eachkcal = eachkcal;
 		this.eachCarbohy = eachCarbohy;
 		this.eachProtein = eachProtein;
 		this.eachFat = eachFat;
@@ -32,6 +34,14 @@ public class SearchVO {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public double getEachkcal() {
+		return eachkcal;
+	}
+
+	public void setEachkcal(double eachkcal) {
+		this.eachkcal = eachkcal;
 	}
 
 	public double getEachCarbohy() {
@@ -60,9 +70,9 @@ public class SearchVO {
 
 	@Override
 	public String toString() {
-		return "SearchVO [foodNum=" + foodNum + ", name=" + name + ", eachCarbohy=" + eachCarbohy + ", eachProtein="
-				+ eachProtein + ", eachFat=" + eachFat + "]";
+		return "SearchVO [foodNum=" + foodNum + ", name=" + name + ", eachkcal=" + eachkcal + ", eachCarbohy="
+				+ eachCarbohy + ", eachProtein=" + eachProtein + ", eachFat=" + eachFat + "]";
 	}
-	
-	
+
+
 }

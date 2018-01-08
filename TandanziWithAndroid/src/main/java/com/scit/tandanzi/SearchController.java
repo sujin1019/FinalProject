@@ -20,7 +20,6 @@ public class SearchController {
 	
 	@RequestMapping(value="search", method=RequestMethod.GET)
 	public @ResponseBody ArrayList<SearchVO> searchFood(String foodname){
-		System.out.println(foodname);
 		ArrayList<SearchVO> sv = searchDAO.searchFood(foodname);
 		System.out.println(sv);
 		return sv;
