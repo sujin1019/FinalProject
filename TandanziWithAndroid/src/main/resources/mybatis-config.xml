@@ -6,9 +6,11 @@
 	<typeAliases>
 		<typeAlias type="com.scit.tandanzi.vo.UserVO" alias="User" />
 		<typeAlias type="com.scit.tandanzi.vo.SearchVO" alias="Search" />
+		<typeAlias type="com.scit.tandanzi.vo.SlListVO" alias="SlList" />
 	</typeAliases>
 	<mappers>
 		<mapper resource="mapper/UserMapper.xml" />
 		<mapper resource="mapper/SearchMapper.xml" />
+		<mapper resource="mapper/ListMapper.xml" />
 	</mappers>
 </configuration>
